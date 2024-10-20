@@ -101,3 +101,32 @@
 // console.log(`age: ${student1.age}`);
 // console.log(`tug'ilgan yi: ${student1.getBirthYear()}`);
 
+// masala 5
+
+// class tortBurchak {
+//     constructor(width, height) {
+//         this._width = width,
+//             this._height = height
+//     }
+//     get width() {
+//         return this._width
+//     }
+//     set width(newWidth) {
+//         this._width = newWidth
+//     }
+//     get height() {
+//         return this._height
+//     }
+//     set height(newHeight) {
+//         this._height = newHeight
+//     }
+//     getArea() {
+//         return this._width * this._height
+//     }
+//     getPerimetr() {
+//         return 2 * (this._width + this._height)
+//     }
+// }
+// let tortBurchak1 = new tortBurchak(10,5)
+// console.log(`Yuzasi: ${tortBurchak1.getArea()}`);
+// console.log(`Perimetr: ${tortBurchak1.getPerimetr()}`);
