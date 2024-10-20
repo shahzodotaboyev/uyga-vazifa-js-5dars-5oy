@@ -1,3 +1,23 @@
+// String constructoriga quyidagi metodlarni custom variantini qo’shing.
+String.prototype.trm = function () {
+    return this.trim();
+}
+String.prototype.UpperCase = function () {
+    return this.toUpperCase();
+}
+String.prototype.has = function () {
+    return this.includes();
+}
+String.prototype.cut = function () {
+    return this.slice();
+}
+String.prototype.rpt = function () {
+    return this.repeat();
+};
+
+let str = '  Hello javascript'
+console.log(str.trm());
+
 // 1masala
 // let anim = {
 //     name: 'tiger',
@@ -5,7 +25,7 @@
 //     limitAge: '11 year',
 
 //     get info() {
-//         return `${ this.name }, ${ this.speed }, ${ this.limitAge }`
+//         return `${this.name}, ${this.speed}, ${this.limitAge}`
 //     }
 // }
 // console.log(anim.info);
@@ -67,36 +87,36 @@
 
 // masal 3
 // class student {
-//     constructor(name, age, currotYear){
+//     constructor(name, age, currotYear) {
 //         this._name = name,
-//         this._age = age,
-//         this._currotYear =  currotYear
+//             this._age = age,
+//             this._currotYear = currotYear
 //     }
-//     get name(){
+//     get name() {
 //         return this._name;
 //     }
-//     set name(newName){
+//     set name(newName) {
 //         this._name = newName
 //     }
-//     get age(){
+//     get age() {
 //         return this._age;
 //     }
-//     set age(newAge){
+//     set age(newAge) {
 //         this._age = newAge
 //     }
 
-//     get currotYear(){
+//     get currotYear() {
 //         return this._currotYear
 //     }
-//     set currotYear(newCurrotYear){
+//     set currotYear(newCurrotYear) {
 //         this._currotYear = newCurrotYear
 //     }
 
-//     getBirthYear(){
+//     getBirthYear() {
 //         return this._currotYear - this._age;
 //     }
 // }
-// let student1 = new student ('Shahzod',15,2024);
+// let student1 = new student('Shahzod', 15, 2024);
 // console.log(`Name: ${student1.name}`);
 // console.log(`age: ${student1.age}`);
 // console.log(`tug'ilgan yi: ${student1.getBirthYear()}`);
@@ -127,6 +147,6 @@
 //         return 2 * (this._width + this._height)
 //     }
 // }
-// let tortBurchak1 = new tortBurchak(10,5)
+// let tortBurchak1 = new tortBurchak(10, 5)
 // console.log(`Yuzasi: ${tortBurchak1.getArea()}`);
 // console.log(`Perimetr: ${tortBurchak1.getPerimetr()}`);
